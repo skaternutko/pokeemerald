@@ -725,7 +725,10 @@
 #define STRINGID_SEEMSWEIRD                           723
 #define STRINGID_WAGGLINGAFINGER                      724
 
-#define BATTLESTRINGS_COUNT                           725
+//new weathers
+#define STRINGID_POLLENUP                             725
+
+#define BATTLESTRINGS_COUNT                           726
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -778,6 +781,7 @@
 #define B_MSG_STARTED_HAIL      5
 #define B_MSG_STARTED_SNOW      6
 #define B_MSG_STARTED_FOG       7
+#define B_MSG_STARTED_POLLEN    8
 
 // gWeatherEndsStringIds
 #define B_MSG_WEATHER_END_RAIN         0

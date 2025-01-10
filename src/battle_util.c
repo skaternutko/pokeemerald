@@ -3969,11 +3969,14 @@ static const u16 sWeatherFlagsInfo[][3] =
     [ENUM_WEATHER_STRONG_WINDS] = {B_WEATHER_STRONG_WINDS, B_WEATHER_STRONG_WINDS, HOLD_EFFECT_NONE},
     [ENUM_WEATHER_SNOW] = {B_WEATHER_SNOW_TEMPORARY, B_WEATHER_SNOW_PERMANENT, HOLD_EFFECT_ICY_ROCK},
     [ENUM_WEATHER_FOG] = {B_WEATHER_FOG_TEMPORARY, B_WEATHER_FOG_PERMANENT, HOLD_EFFECT_NONE},
+    [ENUM_WEATHER_POLLEN] = {B_WEATHER_POLLEN, B_WEATHER_POLLEN, HOLD_EFFECT_NONE},
 };
 
 bool32 TryChangeBattleWeather(u32 battler, u32 weatherEnumId, bool32 viaAbility)
 {
-    u16 battlerAbility = GetBattlerAbility(battler);
+    //old garbage we don't need lmao
+
+    /*u16 battlerAbility = GetBattlerAbility(battler);
     if (gBattleWeather & B_WEATHER_PRIMAL_ANY
         && battlerAbility != ABILITY_DESOLATE_LAND
         && battlerAbility != ABILITY_PRIMORDIAL_SEA
@@ -3994,8 +3997,10 @@ bool32 TryChangeBattleWeather(u32 battler, u32 weatherEnumId, bool32 viaAbility)
         else
             gWishFutureKnock.weatherDuration = 5;
         return TRUE;
-    }
-    return FALSE;
+    }*/
+
+   //when it just always changes
+    return TRUE;
 }
 
 static bool32 TryChangeBattleTerrain(u32 battler, u32 statusFlag, u8 *timer)

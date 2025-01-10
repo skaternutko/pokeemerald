@@ -11320,6 +11320,9 @@ static void Cmd_setfieldweather(void)
     case ENUM_WEATHER_SNOW:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SNOW;
         break;
+    case ENUM_WEATHER_POLLEN:
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_POLLEN;
+        break;
     }
 
     gBattlescriptCurrInstr = cmd->nextInstr;
